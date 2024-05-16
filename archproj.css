@@ -33,6 +33,19 @@ a[aria-current="page"] {
     }
 }
 
+.modal-dialog {
+    max-width: none;
+    width: auto;
+}
+.modal-content {
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+}
+.modal-body {
+    padding: 0;
+}
 
 .pic {
     border-radius: 10px;
