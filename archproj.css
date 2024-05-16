@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #E5E4E2;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+    text-shadow: 1px 1px #36454F;
+    background-color: #1f1f1f;
+    text-decoration: none;
+}
+
+a[aria-current="page"] {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+.titles {
+    background-color: #E5E4E2;
+    font-family: "Platypi", sans-serif;
+    text-align: center;
+    padding: 35px;
+}
+
+.row {
+    background-color: #E5E4E2;
+}
+
+@media (max-width: 992px) {
+    .pic {
+        padding-top: 15px;
+    }
+}
+
+
+.pic {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.pic:hover {
+    transform: translateY(-5px);
+}

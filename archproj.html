@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PORTFOLIO | HAMZA ABDULLE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="archproj.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/75df75a80c.js" crossorigin="anonymous"></script>
+        <script>
+            function showModal(imageUrl) {
+                var modalImage = document.getElementById('modalImage');
+                modalImage.src = imageUrl;
+            }
+        </script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="homepage.html" style="color:#D3D3D3; font-family: 'Lobster', sans-serif; font-size: 36px;">Hamza Abdulle</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="animate__animated animate__fadeInUp" style="color:#D3D3D3"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item animate__animated animate__fadeInUp">
+                            <a class="nav-link active" href="aboutme.html" style="color:#D3D3D3; font-family: 'Platypi', sans-serif; font-size: 26px;"></i>about me <i class="fa-solid fa-sliders"></i></a></li>
+                        <li class="nav-item animate__animated animate__fadeInUp">
+                            <a class="nav-link" aria-current="page" href="archproj.html" style="color:#D3D3D3; font-family: 'Platypi', sans-serif; font-size: 26px;"></i>architecture projects <i class="fa-solid fa-compass-drafting"></i></a></li>
+                        <li class="nav-item animate__animated animate__fadeInUp">
+                            <a class="nav-link" href="codeproj.html" style="color:#D3D3D3; font-family: 'Platypi', sans-serif; font-size: 26px;"></i>coding projects <i class="fa-solid fa-terminal"></i></a></li>
+                    </ul>
+                </div>
+            </div> 
+        </nav>
+
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="" class="img-fluid" id="modalImage">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <h2 class="titles">Technical Drawings: Plans</h2>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./images/groundfloor.jpg" class="img-fluid pic" id="image1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showModal('./images/groundfloor.jpg')">
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/secondfloor.jpg" class="img-fluid pic" id="image2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showModal('./images/secondfloor.jpg')">
+                </div>
+            </div>
+        </div>
+        
+
+    </body>
+</html>
+
+<!-- <p style="text-align: center; padding-top: 60px; opacity: 0.5;"><i class="fa-regular fa-copyright"></i> Hamza Abdulle 2024</p> -->
